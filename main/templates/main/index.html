@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
      <!-- The title of the webpage -->
-    <title>DeliverEase|Connecting Delivery Partner with Customer</title>
+    <title>DeliverEase | Connecting Delivery Partner with Customer</title>
 
     <!-- Link to the external stylesheet -->
     <link rel="stylesheet" href="{% static  'main/style.css'%}">
@@ -30,7 +30,13 @@
         <header class="header">
             <nav class="navbar">
                 <h2> DeliverEase</h2>
+                
                 <ul class="nav-menu">
+<<<<<<< HEAD
+         <!-- Navigation links -->                    
+=======
+                    <!-- Navigation links -->
+>>>>>>> 7cc0f7325d563abfe52d25380ea1e6e7bcc92e8a
                     <li class="nav-item">
                         <a href="{% url "global_index" %}" class="nav-link">Home</a>
                     </li>
@@ -39,9 +45,11 @@
                     </li>
                     <li class="nav-item">
                     
-                      <a href='/auth/login'  ><button  class="btn"> Login</button></a>
+                      <a href="/auth/login"  ><button  class="btn"> Login</button></a>
                     </li>
                 </ul>
+
+                <!-- hamburger div will use for responsiveness -->
                 <div class="hamburger">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -51,19 +59,19 @@
         </header>
 
         <!-- Main content section -->
-        <div class='container'>
+        <div class="container">
             <h1> Empowering Delivery Partners,<br/>Connecting Communities!</h1>
       
-            <div class='containerLower'>
+            <div class="containerLower">
       
-              <div class='left'>
+              <div class="left">
                       <p> New User ?</p>
-                  <a href="/get_started"> <button class='btn'> Get started</button> </a>
+                  <a href="/get_started"> <button class="btn"> Get started</button> </a>
                   
-                  <a href="/about_us"><button class='btn'> Who we are</button></a>
+                  <a href="/about_us"><button class="btn"> Who we are</button></a>
               </div>
       
-              <div class='right'>
+              <div class="right">
                   <img src="{% static "media/homepage.jpg" %}" alt="homepageimg"  />
               </div>
       
@@ -76,7 +84,8 @@
      <!-- External JS Link to get required icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+    
+    <!-- External JavaScript file -->
     <script src="{% static "main_js/index.js" %}"></script>
     
 </body>
